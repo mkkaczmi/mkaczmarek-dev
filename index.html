@@ -28,8 +28,17 @@
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#about">About</a>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  About
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#about_me">About me</a>
+                  <a class="dropdown-item" href="#education">Education</a>
+                  <a class="dropdown-item" href="#skills">Skills</a>
+                  <a class="dropdown-item" href="#courses_certificates">Courses & Certificates</a>
+                  <a class="dropdown-item" href="#add_skills">Additional Skills</a>
+                </div>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#portfolio">Portfolio</a>
@@ -64,7 +73,7 @@
 
     <!-- ABOUT -->
     <section id="about">
-        <div class="container">
+        <div id="about_me"class="container">
             <div class="row" data-aos="fade-up">
                 <div class="col-lg-5">
                     <div class="intro mb-4">
@@ -79,14 +88,15 @@
                 </div>
             </div>
         </div>
-        <div class="container">
+        <div id="education" class="container">
             <div data-aos="fade-up">
                 <h1 class="display-4">Education</h1>
-                <p>I graduated from the I Liceum Ogólnokształcące im. Stefana Żeromskiego in Jelenia Góra with a profile in mathematics, physics and computer science. I've studied on Wrocław's University of Science and Technology at the Faculty of Information and Communication Technology on the Systems Engineering. This gave me experience in teamwork, working on projects and systematic work.
-                    Recently I've moved to Łódź and began studies on Łódź's University of Science and Technology at the Faculty of Electrical, Electronic, Computer and Control Engingeering on the Computer Science engineering degree.</p>
+                <p>I graduated from the I Liceum Ogólnokształcące im. Stefana Żeromskiego in Jelenia Góra with a profile in mathematics, physics and computer science. 
+                <p>Then I've studied on Wrocław's University of Science and Technology at the Faculty of Information and Communication Technology on the Systems Engineering. This gave me experience in teamwork, working on projects and systematic work.</p>
+                <p>Recently I've moved to Łódź and began studies on Łódź's University of Science and Technology at the Faculty of Electrical, Electronic, Computer and Control Engingeering on the Computer Science engineering degree.</p>
             </div>
         </div>
-        <div class="container mt-5">
+        <div id="skills" class="container mt-5">
             <h1 class="display-4" data-aos="fade-up">Skills</h1>
             <div class="mb-3" data-aos="fade-up">
               <h3>C</h3>
@@ -132,22 +142,8 @@
             </div>
         </div>
         
-        <div class="container mt-5">
+        <div id="courses_certificates" class="container mt-5">
             <h1 class="display-4" data-aos="fade-up">Courses & Certificates</h1>
-            <div class="card mb-3" data-aos="fade-up">
-              <div class="card-body">
-                <h3 class="card-title">Python's Institute Entry-Level Programmer</h3>
-                <img src="./assets/img/certificate_pcep.jpg" style="width:50%; height:auto;"class="img-fluid mb-3" alt="PCEP">
-                <p class="card-text">Topics covered:</p>
-                <ul>
-                  <li>computer programming and Python fundamentals</li>
-                  <li>control flow - conditional blocks and loops</li>
-                  <li>data structures - tuples, dictionaries, lists and strings</li>
-                  <li>functions and exceptions</li>
-                </ul>
-                <h5>Certified on 26.05.2023 - <a href="https://verify.openedg.org/?id=pbPQ.qwg8.tLir">click to see credential</a></h5>
-              </div>
-            </div>
             <div class="card mb-3" data-aos="fade-up">
                 <div class="card-body">
                   <h3 class="card-title">Harvard's University Introduction to Computer Science CS50x</h3>
@@ -163,96 +159,88 @@
                     <li>resource management</li>
                     <li>software and web development</li>
                   </ul>
-                  <h5>Certified on 28.08.2023 - <a href="https://verify.openedg.org/?id=pbPQ.qwg8.tLir">click to see credential</a></h5>
+                  <h5>Certified on 28.08.2023 - <a href="https://verify.openedg.org/?id=pbPQ.qwg8.tLir" target="_blank">click to see credential</a></h5>
                 </div>
-              </div>
-              <div class="container mt-5">
-                <h1 class="display-4" data-aos="fade-up">Additional Skills</h1>
-                <ul class="list-group" data-aos="fade-up">
-                  <li class="list-group-item">
-                    <p>Knowledge of technologies such as:</p>
-                    <ul>
-                      <li>Microsoft Office</li>
-                      <li>Miro</li>
-                      <li>Github</li>
-                    </ul>
-                  </li>
-                  <li class="list-group-item">Basics of Matlab and R language</li>
-                  <li class="list-group-item">Usage of AI to improve quality of work</li>
-                  <li class="list-group-item">Advanced knowledge of English</li>
-                  <li class="list-group-item">Teamwork</li>
-                  <li class="list-group-item">Punctuality</li>
-                  <li class="list-group-item">Work scheduling and organization</li>
-                  <li class="list-group-item">Determination to reach for a goal</li>
+            </div>
+            <div class="card mb-3" data-aos="fade-up">
+              <div class="card-body">
+                <h3 class="card-title">Python's Institute Entry-Level Programmer</h3>
+                <img src="./assets/img/certificate_pcep.jpg" style="width:50%; height:auto;"class="img-fluid mb-3" alt="PCEP">
+                <p class="card-text">Topics covered:</p>
+                <ul>
+                  <li>computer programming and Python fundamentals</li>
+                  <li>control flow - conditional blocks and loops</li>
+                  <li>data structures - tuples, dictionaries, lists and strings</li>
+                  <li>functions and exceptions</li>
                 </ul>
+                <h5>Certified on 26.05.2023 - <a href="https://verify.openedg.org/?id=pbPQ.qwg8.tLir" target="_blank">click to see credential</a></h5>
               </div>
-          </div>
+            </div>
+        </div>
+        <div id="add_skills" class="container mt-5">
+            <h1 class="display-4" data-aos="fade-up">Additional Skills</h1>
+            <ul class="list-group" data-aos="fade-up">
+                <li class="list-group-item">
+                <p>Knowledge of technologies such as:</p>
+                <ul>
+                    <li>Microsoft Office</li>
+                    <li>Miro</li>
+                    <li>Github</li>
+                </ul>
+                </li>
+                <li class="list-group-item">Basics of Matlab and R language</li>
+                <li class="list-group-item">Usage of AI to improve quality of work</li>
+                <li class="list-group-item">Advanced knowledge of English</li>
+                <li class="list-group-item">Teamwork</li>
+                <li class="list-group-item">Punctuality</li>
+                <li class="list-group-item">Work scheduling and organization</li>
+                <li class="list-group-item">Determination to reach for a goal</li>
+            </ul>
+        </div>
     </section>
 
     <!-- PORTFOLIO -->
-    <section id="portfolio">
-        <div class="container">
-            <div class="row">
-                <div class="col-12" data-aos="fade-up">
-                    <div class="intro text-center">
-                        <div class="hr-line"></div>
-                        <h1 class="display-4">Portfolio</h1>
-                        <p class="mx-auto">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row gy-4">
-                <div class="col-lg-6"  data-aos="fade-up">
-                    <div class="service">
-                        <div class="icon">
-                            <i class="ri-pencil-ruler-2-fill"></i>
-                        </div>
-                        <div>
-                            <h4>Service title</h4>
-                            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less</p>
-                            <a href="#" class="link-arrow">Read More <i class="ri-arrow-right-up-line"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6"  data-aos="fade-up" data-aos-delay="300">
-                    <div class="service">
-                        <div class="icon">
-                            <i class="ri-cup-fill"></i>
-                        </div>
-                        <div>
-                            <h4>Service title</h4>
-                            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less</p>
-                            <a href="#" class="link-arrow">Read More <i class="ri-arrow-right-up-line"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6"  data-aos="fade-up" data-aos-delay="500">
-                    <div class="service">
-                        <div class="icon">
-                            <i class="ri-computer-fill"></i>
-                        </div>
-                        <div>
-                            <h4>Service title</h4>
-                            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less</p>
-                            <a href="#" class="link-arrow">Read More <i class="ri-arrow-right-up-line"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6"  data-aos="fade-up" data-aos-delay="700">
-                    <div class="service">
-                        <div class="icon">
-                            <i class="ri-user-5-fill"></i>
-                        </div>
-                        <div>
-                            <h4>Service title</h4>
-                            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less</p>
-                            <a href="#" class="link-arrow">Read More <i class="ri-arrow-right-up-line"></i></a>
-                        </div>
-                    </div>
+    <section id="portfolio" class="container mt-5">
+        <div class="row">
+            <div class="col-12" data-aos="fade-up">
+                <div class="intro text-center">
+                    <div class="hr-line"></div>
+                    <h1 class="display-4">PORTFOLIO</h1>
+                    <p class="mx-auto">Check out my recent work.</p>
                 </div>
             </div>
         </div>
-    </section>
+
+        <div class="row">
+        <!-- Data visualisation project -->
+        <div class="col-md-6 mb-4" data-aos="fade-up">
+            <div class="card">
+            <!-- <img src="project2.jpg" class="card-img-top" alt="Project 2"> -->
+            <div class="card-body">
+                <h5 class="card-title">Popular programming languages data visualisation</h5>
+                <p class="card-text">Released on: COMING SOON</p>
+                <p class="card-text">Interactive data visualisation of most popular programming languages in time. Created with usage of Flask and Kaggle database.</p>
+                <h5>Coming soon!</h5>
+                <!-- <a href="#" class="btn btn-dark">Live Version</a>
+                <a href="#" class="btn btn-outline-dark">Source Code</a> -->
+            </div>
+            </div>
+        </div>
+        <!-- Personal website project -->
+        <div class="col-md-6 mb-4" data-aos="fade-up">
+            <div class="card">
+              <!-- <img src="project1.jpg" class="card-img-top" alt="Personal website"> -->
+              <div class="card-body">
+                <h5 class="card-title">Personal Website</h5>
+                <p class="card-text">Released on: 28.08.2023</p>
+                <p class="card-text">Personal website created whith usage of following technologies: HTML, CSS, , JavaScript, Bootstrap 5</p>
+                <a href="#" class="btn btn-dark">Live Version</a>
+                <a href="#" class="btn btn-outline-dark">Source Code</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
     <!-- CONTACT -->
     <!-- add ability to send email directly to my email box -->
@@ -269,21 +257,21 @@
             </div>
             <div class="row">
                 <div class="col-lg-8 mx-auto" data-aos="fade-up">
-                    <form action="" class="row gy-3">
+                    <form  class="row gy-3" action="https://formspree.io/f/mzblraqj" method="POST">
                         <div class="col-lg-6">
-                            <input type="text" class="form-control" placeholder="Name">
+                            <input type="email" name="email" class="form-control" placeholder="Email">
                         </div>
                         <div class="col-lg-6">
-                            <input type="email" class="form-control" placeholder="Email">
+                            <input type="text" name="name" class="form-control" name="name" placeholder="Name">
                         </div>
                         <div class="col-lg-12">
-                            <input type="text" class="form-control" placeholder="Subject">
+                            <input type="text" class="form-control" name="subject" placeholder="Subject">
                         </div>
                         <div class="col-lg-12">
-                            <textarea class="form-control" placeholder="message" rows="5"></textarea>
+                            <textarea class="form-control" name="message" placeholder="message" rows="5"></textarea>
                         </div>
                         <div class="col-12">
-                            <button class="btn btn-dark">Send Message</button>
+                            <button class="btn btn-dark" type="submit">Send Message</button>
                         </div>
                     </form>
                 </div>
@@ -299,11 +287,11 @@
                     <div class="col-auto">
                         <div>
                             <p class="mb-0">EMAIL</p>
-                            <h2 style="color:black;">kaczmarekmichal0@gmail.com</h2>
+                            <h5 style="color:black;">kaczmarekmichal0@gmail.com</h5>
                         </div>
                         <div class="mt-4">
                             <p class="mb-0">PHONE</p>
-                            <h2 style="color:black;">+48 795 030 712</h2>
+                            <h5 style="color:black;">+48 795 030 712</h5>
                         </div>
                     </div>
                     <div class="col-auto">

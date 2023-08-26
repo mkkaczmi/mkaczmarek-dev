@@ -73,7 +73,7 @@ section {
 
 @media (max-width: 992px) {
     .navbar {
-        background: url("../img/cover_1.jpg");
+        background-color: #a4a4a4;
         min-width: 100vw;
         background-position: top;
         background-size: auto;

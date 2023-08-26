@@ -151,27 +151,8 @@ section {
     background-color: white;
 }
 
-/* Service */
-.service {
-    border: var(--border-width) solid var(--border-color);
-    border-radius: var(--border-radius);
-    display: flex;
-    padding: 32px;
-}
+/* Portfolio */
 
-.service .icon {
-    width: 100px;
-    height: 100px;
-    background-color: var(--dark);
-    display: flex;
-    flex: none;
-    align-items: center;
-    justify-content: center;
-    font-size: 34px;
-    color: white;
-    border-radius: var(--border-radius);
-    margin-right: 16px;
-}
 
 .link-arrow {
     text-transform: uppercase;
@@ -194,7 +175,7 @@ section {
     color: white;
 }
 
-/* wrok */
+/* work */
 #work {
     background-color: var(--dark);
 }
@@ -224,38 +205,6 @@ section {
     border-radius: var(--border-radius);
 }
 
-/* reviews */
-#testimonials {
-    background-color: #f8f8f8;;
-}
-
-.review {
-    border: var(--border-width) solid var(--border-color);
-    border-radius: var(--border-radius);
-    padding: 32px;
-    background-color: white;
-}
-
-.review .person {
-    display: flex;
-    align-items: center;
-}
-
-.review .person img {
-    width: unset;
-    border-radius: var(--border-radius);
-    margin-right: 16px;
-}
-
-.review .stars {
-    color: orange;
-}
-
-.review p {
-    border-bottom: var(--border-width) solid var(--border-color);
-    padding-bottom: 16px;
-}
-
 /* contact */
 #contact form {
     padding: 32px;
@@ -272,37 +221,6 @@ section {
 
 #contact form input.form-control {
     height: 56px;
-}
-
-/* insta posts */
-#insta-posts {
-    position: relative;
-}
-
-.insta-follow {
-    width: 90px;
-    height: 90px;
-    background-color: var(--dark);
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 44px;
-    border-radius: var(--border-radius);
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-}
-
-.insta-follow:hover {
-    background-color: white;
-}
-
-#insta-posts:hover .insta-follow {
-    opacity: 1;
-    top: 50%;
 }
 
 /* footer */

@@ -28,8 +28,17 @@
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#about">O mnie</a>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  O mnie
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#about_me">O Mnie</a>
+                  <a class="dropdown-item" href="#education">Edukacja</a>
+                  <a class="dropdown-item" href="#skills">Umiejętności</a>
+                  <a class="dropdown-item" href="#courses_certificates">Kursy i Certyfikaty</a>
+                  <a class="dropdown-item" href="#add_skills">Dodatkowe Umiejętności</a>
+                </div>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#portfolio">Portfolio</a>
@@ -55,7 +64,7 @@
                 <div class="col-lg-6">
                     <h1 class="display-1" data-aos="fade-up">MICHAŁ KACZMAREK</h1>
                     <h2 class="display-1" data-aos="fade-up">Back-end/full-stack developer</h2>
-                    <p data-aos="fade-up" data-aos-delay="300">Uwielbiam programować i chcę rozpocząć karierę jako Web Developer. Realizuję również prywatne zlecenia.</p>
+                    <p data-aos="fade-up" data-aos-delay="300">Uwielbiam programować. Chcę rozpocząć karierę jako Junior Web Developer. Realizuję również prywatne zlecenia.</p>
                     <a href="#portfolio" class="btn btn-outline-light" data-aos="fade-up" data-aos-delay="500">Sprawdź moje projekty</a>
                 </div>
             </div>
@@ -64,14 +73,14 @@
 
     <!-- ABOUT -->
     <section id="about">
-        <div class="container">
+        <div id="about_me"class="container">
             <div class="row" data-aos="fade-up">
                 <div class="col-lg-5">
                     <div class="intro mb-4">
                         <div class="hr-line"></div>
-                        <h1 class="display-4">Cześć, jestem Michał!</h1>
+                        <h1 class="display-4">Cześć! Jestem Michał!</h1>
                     </div>
-                    <p>Pochodzę z Jeleniej Góry. Obecnie mieszkam w Łodzi. Po ukończeniu liceum, przeprowadziłem się do Wrocławia w celu studiowania. Jestem pasjonatem programowania, szczególnie web developmentu. Chciałbym rozpocząć karierę jako junior web developer. Jestem również chętny do realizacji zleceń.</p>
+                    <p>Pochodzę z Jeleniej Góry. Obecnie mieszkam w Łodzi. Po ukończeniu liceum, przeprowadziłem się do Wrocławia w celu studiowania. Interesuję się programowaniem, szczególnie web developmentem. Chcę rozpocząć karierę jako web developer. Jestem również zainteresowany tworzeniem projektów dla klientów.</p>
                     <a href="./assets/files/KaczmarekMichał_CV_11_2022.pdf" class="btn btn-outline-dark">Sprawdź moje CV</a>
                 </div>
                 <div class="col-lg-6 offset-lg-1">
@@ -79,14 +88,15 @@
                 </div>
             </div>
         </div>
-        <div class="container">
+        <div id="education" class="container">
             <div data-aos="fade-up">
                 <h1 class="display-4">Edukacja</h1>
-                <p>Ukończyłem I Liceum Ogólnokształcące im. Stefana Żeromskiego w Jeleniej Górze na profilu matematyczno-fizyczno-informatycznym. Studiowałem na Politechnice Wrocławskiej na wydziale Informatyki i Telekomunikacji na kierunku inżynieria systemów. Studiowanie pozwoliło zdobyć mi doświadczenie w obszarze pracy w zespole, pracy nad projektami oraz systematycznej nauki.
-                    Niedawno przeprowadziłem się do Łodzi i rozpocząłem studia na Politechnice Łódzkiej na wydziale Elektrotechniki, Elektroniki, Informatyki i Automatyki na kierunku Computer Science.</p>
+                <p>Ukończyłem <b>I Liceum Ogólnokształcące im. Stefana Żeromskiego w Jeleniej Górze</b> na profilu <b>matematyczno-fizyczno-informatycznym</b>. 
+                <p>Następnie przez rok studiowałem na <b>Politechnice Wrocławskiej</b> na <b>Wydziale Informatyki i Telekomunikacji</b>, kierunek <b>Inżynieria Systemów</b>. Studia dały mi doświadczenie w zakresie pracy w zespole, pracy nad projektami oraz systematycznej pracy.</p>
+                <p>Ostatnio przeprowadziłem się do Łodzi i będę studiował na <b>Politechnice Łódzkiej</b> na <b>Wydziale Elektrotechniki, Elektroniki, Informatyki i Automatyki</b> na kierunku <b>Computer Science</b>.</p>
             </div>
         </div>
-        <div class="container mt-5">
+        <div id="skills" class="container mt-5">
             <h1 class="display-4" data-aos="fade-up">Umiejętności</h1>
             <div class="mb-3" data-aos="fade-up">
               <h3>C</h3>
@@ -132,127 +142,107 @@
             </div>
         </div>
         
-        <div class="container mt-5">
+        <div id="courses_certificates" class="container mt-5">
             <h1 class="display-4" data-aos="fade-up">Kursy i Certyfikaty</h1>
-            <div class="card mb-3" data-aos="fade-up">
-              <div class="card-body">
-                <h3 class="card-title">Python's Institute Entry-Level Programmer</h3>
-                <img src="./assets/img/certificate_pcep.jpg" style="width:50%; height:auto;"class="img-fluid mb-3" alt="PCEP">
-                <p class="card-text">Kurs obejmował następujące zagadnienia:</p>
-                <ul>
-                  <li>programowanie i podstawy Pythona</li>
-                  <li>kontrola przepływu - bloki warunkowe i pętle</li>
-                  <li>struktury danych - krotki, słowniki, listy i łańcuchy znaków</li>
-                  <li>funkcje i wyjątki</li>
-                </ul>
-                <h5>Certyfikacja w dniu 26.05.2023r. - <a href="https://verify.openedg.org/?id=pbPQ.qwg8.tLir">kliknij by zobaczyć poświadczenie</a></h5>
-              </div>
-            </div>
             <div class="card mb-3" data-aos="fade-up">
                 <div class="card-body">
                   <h3 class="card-title">Harvard's University Introduction to Computer Science CS50x</h3>
                   <img src="./assets/img/certificate_cs50.jpg" style="width:50%; height:auto;"class="img-fluid mb-3" alt="CS50x">
                   <p class="card-text">Kurs obejmował następujące zagadnienia:</p>
                   <ul>
-                    <li>technologie/języki typu back-end i front-end</li>
+                    <li>technologie/języki back-end i front-end</li>
                     <li>myślenie komputerowe</li>
-                    <li>abstrakcja</li>
+                    <li>abstrakcja komputerowa</li>
                     <li>algorytmy</li>
                     <li>struktury danych</li>
                     <li>zarządzanie pamięcią</li>
                     <li>zarządzanie źródłem</li>
                     <li>software i web development</li>
                   </ul>
-                  <h5>Certyfikacja w dniu 28.08.2023r. - <a href="https://verify.openedg.org/?id=pbPQ.qwg8.tLir">kliknij by zobaczyć poświadczenie</a></h5>
+                  <h5>Certyfikacja w dniu 28.08.2023r. - <a href="https://verify.openedg.org/?id=pbPQ.qwg8.tLir" target="_blank">kliknij by zobaczyć poświadczenie</a></h5>
                 </div>
-              </div>
-              <div class="container mt-5">
-                <h1 class="display-4" data-aos="fade-up">Inne Umiejętności</h1>
-                <ul class="list-group" data-aos="fade-up">
-                  <li class="list-group-item">
-                    <p>Znajomość technologii takich jak:</p>
-                    <ul>
-                      <li>Microsoft Office</li>
-                      <li>Miro</li>
-                      <li>Github</li>
-                    </ul>
-                  </li>
-                  <li class="list-group-item">Podstawy Matlaba i języka R</li>
-                  <li class="list-group-item">Użycie narzędzi AI w celu optymalizacji pracy</li>
-                  <li class="list-group-item">Zaawansowana znajomość języka angielskiego</li>
-                  <li class="list-group-item">Praca w zespole</li>
-                  <li class="list-group-item">Punktualność</li>
-                  <li class="list-group-item">Planowanie i organizacja pracy</li>
-                  <li class="list-group-item">Determinacja w dążeniu do celu</li>
+            </div>
+            <div class="card mb-3" data-aos="fade-up">
+              <div class="card-body">
+                <h3 class="card-title">Python's Institute Entry-Level Programmer</h3>
+                <img src="./assets/img/certificate_pcep.jpg" style="width:50%; height:auto;"class="img-fluid mb-3" alt="PCEP">
+                <p class="card-text">Kurs obejmował następujące zagadnienia:</p>
+                <ul>
+                  <li>programowanie i podstawy języka Python</li>
+                  <li>sterowanie przepływem danych - bloki warunkowe i pętle</li>
+                  <li>struktury danych - krotki, słowniki, listy i łańcuchy znaków (string)</li>
+                  <li>funkcje i wyjątki</li>
                 </ul>
+                <h5>Certyfikacja w dniu 26.05.2023r. - <a href="https://verify.openedg.org/?id=pbPQ.qwg8.tLir" target="_blank">kliknij by zobaczyć poświadczenie</a></h5>
               </div>
-          </div>
+            </div>
+        </div>
+        <div id="add_skills" class="container mt-5">
+            <h1 class="display-4" data-aos="fade-up">Dodatkowe Umiejętności</h1>
+            <ul class="list-group" data-aos="fade-up">
+                <li class="list-group-item">
+                <p>Znajomość technologii takich jak:</p>
+                <ul>
+                    <b>
+                    <li>Microsoft Office</li>
+                    <li>Miro</li>
+                    <li>Github</li>
+                    </b>
+                </ul>
+                </li>
+                <li class="list-group-item">Podstawy <b>Matlab</b> oraz <b>języka R</b></li>
+                <li class="list-group-item">Użycie <b>AI</b> w celu poprawy efektywności pracy</li>
+                <li class="list-group-item">Zaawansowana znajomość <b>języka angielskiego</b></li>
+                <li class="list-group-item">Praca w zespole</li>
+                <li class="list-group-item">Punktualność</li>
+                <li class="list-group-item">Samodzielne planowanie i organizacja pracy</li>
+                <li class="list-group-item">Determinacja w dążeniu do celu</li>
+            </ul>
+        </div>
     </section>
 
     <!-- PORTFOLIO -->
-    <section id="portfolio">
-        <div class="container">
-            <div class="row">
-                <div class="col-12" data-aos="fade-up">
-                    <div class="intro text-center">
-                        <div class="hr-line"></div>
-                        <h1 class="display-4">Portfolio</h1>
-                        <p class="mx-auto">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row gy-4">
-                <div class="col-lg-6"  data-aos="fade-up">
-                    <div class="service">
-                        <div class="icon">
-                            <i class="ri-pencil-ruler-2-fill"></i>
-                        </div>
-                        <div>
-                            <h4>Service title</h4>
-                            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less</p>
-                            <a href="#" class="link-arrow">Read More <i class="ri-arrow-right-up-line"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6"  data-aos="fade-up" data-aos-delay="300">
-                    <div class="service">
-                        <div class="icon">
-                            <i class="ri-cup-fill"></i>
-                        </div>
-                        <div>
-                            <h4>Service title</h4>
-                            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less</p>
-                            <a href="#" class="link-arrow">Read More <i class="ri-arrow-right-up-line"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6"  data-aos="fade-up" data-aos-delay="500">
-                    <div class="service">
-                        <div class="icon">
-                            <i class="ri-computer-fill"></i>
-                        </div>
-                        <div>
-                            <h4>Service title</h4>
-                            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less</p>
-                            <a href="#" class="link-arrow">Read More <i class="ri-arrow-right-up-line"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6"  data-aos="fade-up" data-aos-delay="700">
-                    <div class="service">
-                        <div class="icon">
-                            <i class="ri-user-5-fill"></i>
-                        </div>
-                        <div>
-                            <h4>Service title</h4>
-                            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less</p>
-                            <a href="#" class="link-arrow">Read More <i class="ri-arrow-right-up-line"></i></a>
-                        </div>
-                    </div>
+    <section id="portfolio" class="container mt-5">
+        <div class="row">
+            <div class="col-12" data-aos="fade-up">
+                <div class="intro text-center">
+                    <div class="hr-line"></div>
+                    <h1 class="display-4">PORTFOLIO</h1>
+                    <p class="mx-auto">Sprawdź moje projekty.</p>
                 </div>
             </div>
         </div>
-    </section>
+
+        <div class="row">
+        <!-- Data visualisation project -->
+        <div class="col-md-6 mb-4" data-aos="fade-up">
+            <div class="card">
+            <!-- <img src="project2.jpg" class="card-img-top" alt="Project 2"> -->
+            <div class="card-body">
+                <h5 class="card-title">Popular programming languages data visualisation</h5>
+                <p class="card-text">Data wydania: COMING SOON</p>
+                <p class="card-text">Interaktywna wizualizacja danych o popularności języków programowania w czasie. Stworzona w oparciu o Flask i bazy danych platformy Kaggle.</p>
+                <h5>Coming soon!</h5>
+                <!-- <a href="#" class="btn btn-dark">Live Version</a>
+                <a href="#" class="btn btn-outline-dark">Source Code</a> -->
+            </div>
+            </div>
+        </div>
+        <!-- Personal website project -->
+        <div class="col-md-6 mb-4" data-aos="fade-up">
+            <div class="card">
+              <!-- <img src="project1.jpg" class="card-img-top" alt="Personal website"> -->
+              <div class="card-body">
+                <h5 class="card-title">Personal Website</h5>
+                <p class="card-text">Data wydania: 28.08.2023</p>
+                <p class="card-text">Personalna strona wykonana przy użyciu: HTML, CSS, JavaScript, Bootstrap 5</p>
+                <a href="#" class="btn btn-dark">Podgląd</a>
+                <a href="https://github.com/mkkaczmi/personal-website-v1" class="btn btn-outline-dark">Kod źródłowy</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
     <!-- CONTACT -->
     <!-- add ability to send email directly to my email box -->
@@ -262,28 +252,28 @@
                 <div class="col-12" data-aos="fade-up">
                     <div class="intro text-center">
                         <div class="hr-line"></div>
-                        <h1 class="display-4">CONTACT ME</h1>
-                        <p class="mx-auto">If you are interested in using my services, have a question or are interested in cooperation, please use the contact form below.</p>
+                        <h1 class="display-4">KONTAKT</h1>
+                        <p class="mx-auto">Jeśli jesteś zainteresowany skorzystaniem z moich usług, masz pytanie lub jesteś zainteresowany współpracą, skorzystaj proszę z formularza kontaktowego poniżej.</p>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-8 mx-auto" data-aos="fade-up">
-                    <form action="" class="row gy-3">
+                    <form  class="row gy-3" action="https://formspree.io/f/mzblraqj" method="POST">
                         <div class="col-lg-6">
-                            <input type="text" class="form-control" placeholder="Name">
+                            <input type="email" name="email" class="form-control" placeholder="Email">
                         </div>
                         <div class="col-lg-6">
-                            <input type="email" class="form-control" placeholder="Email">
+                            <input type="text" name="name" class="form-control" name="name" placeholder="Nazwa/imię">
                         </div>
                         <div class="col-lg-12">
-                            <input type="text" class="form-control" placeholder="Subject">
+                            <input type="text" class="form-control" name="subject" placeholder="Temat">
                         </div>
                         <div class="col-lg-12">
-                            <textarea class="form-control" placeholder="message" rows="5"></textarea>
+                            <textarea class="form-control" name="message" placeholder="treść" rows="5"></textarea>
                         </div>
                         <div class="col-12">
-                            <button class="btn btn-dark">Send Message</button>
+                            <button class="btn btn-dark" type="submit">Wyślij</button>
                         </div>
                     </form>
                 </div>
@@ -299,15 +289,15 @@
                     <div class="col-auto">
                         <div>
                             <p class="mb-0">EMAIL</p>
-                            <h2 style="color:black;">kaczmarekmichal0@gmail.com</h2>
+                            <h5 style="color:black;">kaczmarekmichal0@gmail.com</h5>
                         </div>
                         <div class="mt-4">
-                            <p class="mb-0">PHONE</p>
-                            <h2 style="color:black;">+48 795 030 712</h2>
+                            <p class="mb-0">TELEFON</p>
+                            <h5 style="color:black;">+48 795 030 712</h5>
                         </div>
                     </div>
                     <div class="col-auto">
-                        <h5 class="mb-3">Follow me on</h5>
+                        <h5 class="mb-3">Obserwuj mnie na:</h5>
                         <div class="social-links ms-auto">
                             <a href="https://www.linkedin.com/in/michal-kaczmarek-webdev/"><i class="ri-linkedin-box-fill"></i></a>
                             <a href="https://github.com/mkkaczmi"><i class="ri-github-fill"></i></a>

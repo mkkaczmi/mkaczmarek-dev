@@ -73,9 +73,15 @@ section {
 
 @media (max-width: 992px) {
     .navbar {
-        background-color: #a4a4a4;
+        background-color: transparent;
         min-width: 100vw;
         background-position: top;
+        background-size: auto;
+    }
+    .navbar-collapse.show {
+        background: url("../img/cover_1.jpg");
+        min-height: 100vh;
+        background-position: left, top;
         background-size: auto;
     }
 }

@@ -20,3 +20,19 @@ AOS.init({
     anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 
   });
+
+document.getElementById("single-page-contact").addEventListener('click', function() {
+  document.getElementById("subject").value="Single-Page Website Service request";
+});
+
+document.getElementById("web-app-contact").addEventListener('click', function() {
+  document.getElementById("subject").value="Custom Web App Service request";
+});
+
+document.getElementById("seo-contact").addEventListener('click', function() {
+  document.getElementById("subject").value="Monthly SEO Audit request";
+});
+
+document.getElementById("order_request").addEventListener('click', function() {
+  document.getElementById("subject").value="Order generating app demo";
+});
